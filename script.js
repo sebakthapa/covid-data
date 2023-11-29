@@ -2,13 +2,15 @@ const countryName = document.querySelector('.country-name');
 const countryTotal = document.querySelector('.total-cases');
 const box = document.querySelector('.box');
 const table = box.querySelector('table');
-const loadingMsg = document.querySelector('.loader-msg');
+let loadingMsg = document.querySelector('.loader-msg');
 
 
 let mainData;
 window.addEventListener('load',getData);
 function getData(){
 // --------------------USing Fetch API MEthod
+ loadingMsg = document.querySelector('.loader-msg');
+
 
 	let url = 'https://disease.sh/v3/covid-19/countries';
 	
