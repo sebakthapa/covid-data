@@ -2,6 +2,7 @@ const countryName = document.querySelector('.country-name');
 const countryTotal = document.querySelector('.total-cases');
 const box = document.querySelector('.box');
 const table = box.querySelector('table');
+const loadingMsg = box.querySelector('.loader-msg');
 
 
 let mainData;
@@ -24,6 +25,8 @@ function getData(){
 				<td>${d.recovered}</td><td class="updated">${timeDiff}</td></tr>`
 				// console.log(d);
 			});	
+            loadingMsg.style.display = "none";
+            
 	})
 }
 

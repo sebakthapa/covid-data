@@ -52,6 +52,7 @@ body{
 table{
 	text-align: center;
 	border-collapse: collapse;
+	width:100%;
 }
 
 table td,
