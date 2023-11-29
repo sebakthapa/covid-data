@@ -72,9 +72,7 @@ table.fixed .table-header{
 	position: fixed;
 	top: 0;
 }
-table.fixed table th:first-child{
-	/* width: 160px; */
-}
+
 
 .country-flag{
 	width: 20px;
@@ -91,6 +89,7 @@ table.fixed table th:first-child{
 
 td.updated{
 	font-size: .7rem;
+	min-width: 76.5;
 }
 
 

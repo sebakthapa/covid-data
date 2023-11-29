@@ -20,9 +20,17 @@ function getData(){
 			data.map(function(d){
 			let timeDiff =  timeDifference(new Date().getTime(), d.updated);
 			// console.log(d.updated);
-				table.innerHTML += `<tr><td class='country'><img class='country-flag' src="${d.countryInfo.flag}" alt="Flag">
-				${  d.country}</td><td class='today-cases'>${d.todayCases}</td><td>${d.cases}</td><td>${d.deaths}</td>
-				<td>${d.recovered}</td><td class="updated">${timeDiff}</td></tr>`
+				table.innerHTML += `<tr>
+                <td class='country'>
+                <img class='country-flag' src="${d.countryInfo.flag}" alt="Flag">
+				${  d.country}
+                </td>
+                <td class='today-cases'>${d.todayCases}</td>
+                <td>${d.cases}</td>
+                <td>${d.deaths}</td>
+				<td>${d.recovered}</td>
+                <td class="updated">${timeDiff}</td>
+                </tr>`
 				// console.log(d);
 			});	
             loadingMsg.style.display = "none";
