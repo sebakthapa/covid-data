@@ -2,7 +2,7 @@ const countryName = document.querySelector('.country-name');
 const countryTotal = document.querySelector('.total-cases');
 const box = document.querySelector('.box');
 const table = box.querySelector('table');
-const loadingMsg = box.querySelector('.loader-msg');
+const loadingMsg = document.querySelector('.loader-msg');
 
 
 let mainData;
